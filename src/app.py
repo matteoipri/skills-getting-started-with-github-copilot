@@ -79,7 +79,7 @@ activities = {
 
 
 
-# Unregister endpoint (must be after app and activities are defined)
+# Unregister endpoint
 @app.post("/activities/{activity_name}/unregister")
 def unregister_from_activity(activity_name: str, email: str):
     """Unregister a student from an activity"""
